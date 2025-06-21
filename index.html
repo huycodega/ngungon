@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Ngủ Ngon Em Yêu 💖</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="container">
+      <h1 class="goodnight-text">Chúc Ngủ Ngon Em Yêu 💖</h1>
+      <p class="message">
+        Chúc em có một giấc ngủ thật ngon, mơ những giấc mơ đẹp và luôn cảm nhận
+        được tình yêu của anh! 🌙✨
+      </p>
+      <button id="loveBtn">Nhận lời chúc đặc biệt</button>
+      <div id="specialWish" class="hidden"></div>
+      <img src="nn.gif" alt="Cute sleeping gif" class="goodnight-gif" />
+    </div>
+    <div class="qr-section">
+      <p>Quét mã QR để truy cập trang web này:</p>
+      <div id="qrcode"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      // Link GitHub Pages thật của bạn
+      var url = "https://huycodega.github.io/ngungon/";
+      new QRCode(document.getElementById("qrcode"), {
+        text: url,
+        width: 160,
+        height: 160,
+      });
+    </script>
+  </body>
+</html>
